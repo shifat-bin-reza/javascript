@@ -4,6 +4,7 @@ console.log(Math.pow(number1, 2));
 
 var number2 = 25;
 var number3 = 45;
+console.log(Math.max(number2, number3));
 const gap = Math.abs(number2 - number3);
 
 if (gap < 5) console.log("Can be friends");
