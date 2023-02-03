@@ -1,8 +1,8 @@
 function getReverse(reverseString) {
-  //   for (let i = reverseString.length; i >= 0; i--) {
-  //     const element = reverseString[i];
-  //     console.log(element);
-  //   }
+  for (let i = reverseString.length; i >= 0; i--) {
+    const element = reverseString[i];
+    console.log(element);
+  }
 
   // reverse sectence
   const word = reverseString.split(" ");
