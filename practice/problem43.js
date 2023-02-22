@@ -13,13 +13,7 @@ for (let i = 0; i < people.length; i++) {
 console.log(sum);
 
 console.log('Array Reduce Method:');
-const array2 = [];
-for (let i = 0; i < people.length; i++) {
-    array2.push(people[i].age);
-}
-
-const result = array2.reduce((previous, current) => {
-    return previous + current;
-}, 0);
-
-console.log(result);
+const test = people.reduce((previous, current) => {
+    return previous + current.age;
+}, 0)
+console.log(test);
