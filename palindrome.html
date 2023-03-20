@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="getText">
+    <button onclick="checkPalindrome()">Find Palindrome</button>
+    <h3 id="setText"></h3>
+    <script>
+        function reverse(str) {
+            let newString = "";
+            for (let i = str.length - 1; i >= 0; i--) {
+                newString += str[i];
+            }
+
+            return newString;
+        }
+
+        function checkPalindrome() {
+            var textField = document.getElementById('setText');
+            var inputField = document.getElementById('getText');
+            var getText = inputField.value;
+
+            let toLowerCase = getText.toLowerCase();
+
+            let newString = reverse(toLowerCase);
+
+            if (toLowerCase == newString) {
+                textField.innerText = 'Palindrome';
+            } else {
+                textField.innerText = 'Not Palindrome';
+            }
+        }
+    </script>
+</body>
+
+</html>
